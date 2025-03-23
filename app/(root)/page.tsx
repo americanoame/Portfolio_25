@@ -3,7 +3,8 @@ import Skill from "@/components/shared/skill";
 
 const Home = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 opacity-0 animate-fadeIn px-4 sm:px-8 lg:px-16">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 opacity-0 animate-fadeIn px-4 sm:px-8 lg:px-16 overflow-hidden">
+
       {/* Text Section */}
       <div className="text-left flex-1 mb-8 md:mb-0">
         <p className="text-xl sm:text-2xl font-thin text-gray-300 mt-10 md:mt-2">
@@ -11,20 +12,20 @@ const Home = () => {
         </p>
         <div className="w-16 border-t border-yellow-950 mt-2"></div>
 
-
         <div className="flex flex-wrap justify-start gap-4 mt-2 text-md sm:text-lg text-gray-400">
-  <span>Authentication Expert</span>
-  <span>| E-commerce Specialist</span>
-  <span>| Problem Solver</span>
-</div>
+          <span>Authentication Expert</span>
+          <span>| E-commerce Specialist</span>
+          <span>| Problem Solver</span>
+        </div>
 
-<div className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 text-yellow-600 drop-shadow-[2px_2px_2px_black] text-center sm:text-left leading-snug sm:leading-normal">
-  <span className="text-pink-600 block sm:inline">Turning Challenges</span>
-  <div className="mt-2">
-    <span className="ml-0 sm:ml-4 block sm:inline">into Solutions</span>
-  </div>
-</div>
-
+        <div className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 text-yellow-600 drop-shadow-[2px_2px_2px_black] text-center sm:text-left leading-snug sm:leading-normal">
+          <span className="text-pink-600 block sm:inline">
+            Turning Challenges
+          </span>
+          <div className="mt-2">
+            <span className="ml-0 sm:ml-4 block sm:inline">into Solutions</span>
+          </div>
+        </div>
 
         <Skill />
       </div>
