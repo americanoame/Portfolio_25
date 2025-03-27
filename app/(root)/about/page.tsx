@@ -7,7 +7,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<"skills" | "education">("skills");
 
   return (
-    <section className="animate-fadeIn flex flex-col md:flex-row gap-8 p-18 bg-white dark:bg-yellow-900 text-neutral-900 dark:text-neutral-100 rounded-md">
+    <section className="animate-fadeIn flex flex-col md:flex-row gap-8 p-18 dark:bg-yellow-600 text-neutral-900 dark:text-neutral-100 rounded-md">
       {/* Left Side - About Me */}
       <div className="md:w-1/2 flex flex-col items-center md:items-start">
         {/* Profile Image */}
@@ -19,9 +19,9 @@ const About = () => {
           className="w-32 h-32 md:w-40 md:h-40 rounded-full mb-6 shadow-lg"
         />
 
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
+        <h2 className="text-3xl dark:text-gray-300 font-bold mb-4">About Me</h2>
 
-        <p className="leading-loose text-center md:text-left">
+        <p className="leading-loose dark:text-gray-300 text-center md:text-left">
           I&apos;m a highly motivated Software Engineer with a passion for web
           development and a strong background in customer service. I excel at
           delivering results and building effective web solutions. My experience
@@ -38,7 +38,7 @@ const About = () => {
           <button
             className={`text-lg font-medium ${
               activeTab === "skills"
-                ? "text-blue-500 border-b-2 border-blue-500"
+                ? "text-pink-600 border-b-2 border-pink-600"
                 : "text-neutral-600 dark:text-neutral-300"
             }`}
             onClick={() => setActiveTab("skills")}
@@ -48,7 +48,7 @@ const About = () => {
           <button
             className={`text-lg font-medium ${
               activeTab === "education"
-                ? "text-blue-500 border-b-2 border-blue-500"
+                ? "text-pink-600 border-b-2 border-pink-600"
                 : "text-neutral-600 dark:text-neutral-300"
             }`}
             onClick={() => setActiveTab("education")}
@@ -89,6 +89,7 @@ const About = () => {
                     <li>Node.js</li>
                     <li>Express</li>
                     <li>MongoDB</li>
+                    <li>Postgres</li>
                     <li>Git & GitHub</li>
                   </ul>
                 </div>
