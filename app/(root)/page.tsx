@@ -3,11 +3,11 @@ import Skill from "@/components/shared/skill";
 
 const Home = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 opacity-0 animate-fadeIn px-4 sm:px-8 lg:px-16 overflow-hidden">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 opacity-0 animate-fadeIn px-4 sm:px-8  lg:px-16 overflow-hidden">
 
-      {/* Text Section */}
+      
       <div className="text-left flex-1 mb-8 md:mb-0">
-        <p className="text-xl sm:text-2xl font-thin text-gray-300 mt-10 md:mt-2">
+        <p className="text-xl sm:text-2xl font-thin text-gray-300 mt-1 sm:mt-10 md:mt-2">
           Full Stack Developer
         </p>
         <div className="w-16 border-t border-yellow-950 mt-2"></div>
@@ -31,7 +31,7 @@ const Home = () => {
       </div>
 
       {/* Image Section */}
-      <div className="flex-1 mt-8 md:mt-0 md:ml-4">
+      <div className="flex-1 mt-0 md:mt-0 md:ml-4">
         <Image
           priority={true}
           src="/image/me.png"
