@@ -34,8 +34,8 @@ const Menu = () => {
                   About
                 </Link>
 
-                <Link href="/projects" className="font-light hover:underline">
-                  Projects
+                <Link href="/service" className="font-light hover:underline">
+                  Service
                 </Link>
 
                 <Link href="/contact" className="font-light hover:underline">
